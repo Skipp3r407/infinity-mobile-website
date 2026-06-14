@@ -93,10 +93,10 @@ export function Header() {
             <Image
               src="/logo.png"
               alt="Infinity Mobile — Mobile Auto Repair & Handyman Services"
-              width={420}
-              height={126}
-              className="h-[126px] w-auto object-contain"
-              sizes="126px"
+              width={587}
+              height={176}
+              className="h-[176px] w-auto object-contain"
+              sizes="176px"
               priority
             />
           </Link>
