@@ -84,31 +84,21 @@ export function Header() {
         <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="focus-ring group flex shrink-0 items-center gap-3"
+            className="focus-ring group shrink-0"
             onClick={() => {
               closeMenus();
               setMobileOpen(false);
             }}
           >
-            <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg">
-              <Image
-                src="/logo.png"
-                alt="Infinity Mobile logo"
-                width={96}
-                height={96}
-                className="h-full w-full object-contain"
-                sizes="48px"
-                priority
-              />
-            </span>
-            <span className="hidden min-w-0 flex-col sm:flex">
-              <span className="font-display text-base font-bold uppercase tracking-tight text-white lg:text-lg">
-                Infinity <span className="text-gradient-accent">Mobile</span>
-              </span>
-              <span className="text-[9px] font-semibold uppercase tracking-[0.3em] text-zinc-500">
-                Citrus County, FL
-              </span>
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Infinity Mobile — Mobile Auto Repair & Handyman Services"
+              width={280}
+              height={84}
+              className="h-[84px] w-auto object-contain"
+              sizes="(max-width: 1024px) 84px, 84px"
+              priority
+            />
           </Link>
 
           <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
